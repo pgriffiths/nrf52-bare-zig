@@ -18,7 +18,7 @@ pub fn build(b: *std.Build) void {
 
     // 4. Create the root module (This is where target and source now live in 0.16.0)
     const blink_module = b.createModule(.{
-        .root_source_file = b.path("src/main_min.zig"),
+        .root_source_file = b.path("src/main.zig"),
         .target = target,
         .optimize = optimize,
     });
